@@ -14,7 +14,7 @@ Have you ever wondered how the apps and software you use daily transition from a
 
 ### **The Role of the Release Engineering Team**
 
-A release engineering team is the people who make sure application releases run smoothly. They integrate the efforts of different product developent teams to produce a stable and safe product. Their job is to ensure that the software's production is repeatable, delivers predictable results, and scales.
+A release engineering team is the people who make sure application releases run smoothly. They integrate the efforts of different product development teams to produce a stable and safe product. Their job is to ensure that the software's production is repeatable, delivers predictable results, and scales.
 
 ### **Inside Firefox's Release Engineering**
 
@@ -22,13 +22,13 @@ Delving into the real-world scenario of Firefox, the Firefox Release Engineering
 
 #### **On Signing 🔏 and CI ✅**
 
-- **Application Signing:** This process is akin to placing a digital seal of authenticity on software, ensuring its origin and integrity. Imagine signing a digital document to certify its credibility; similarly, application signing authenticates software for end users.
+- **Application Signing:** This process is akin to placing a digital seal of authenticity on software, ensuring its origin and integrity. Imagine signing a digital document to certify its credibility; similarly, application signing allows software authors to "sign" the software they publish and guarantee the application has not been altered since it was signed.
   
-- **Continuous Integration (CI):** Think of CI as the software's regular health check-up. It's a process where changes made by developers are frequently integrated and tested. This routine ensures that the software remains healthy, catching potential issues early and maintaining consistent quality.
+- **Continuous Integration (CI):** Think of CI as the software's regular health check-up. It's a process where changes made by developers are frequently integrated into the codebase and tested. This routine helps the software remains healthy, catching potential issues early.
 
 ### **The Phases of a Firefox Release**
 
-[Firefox's approach to releases](https://whattrainisitnow.com/) is highly iterative and user-feedback driven, reflecting the dynamic nature of web browsers.
+[Firefox's approach to releases](https://whattrainisitnow.com/) is highly iterative and user-feedback driven, reflecting the changing nature of web browsers.
 
 1. [**Nightly:**](https://whattrainisitnow.com/release/?version=nightly) This initial phase, much like a rough draft, is crucial for spotting issues early, and is not yet fully tested.
 
@@ -42,7 +42,7 @@ Delving into the real-world scenario of Firefox, the Firefox Release Engineering
 
 ### **Taskcluster and Taskgraph: The Backbone of Firefox's Release Automation**
 
-- [**Taskcluster:**](https://taskcluster.net/) This robust framework underpins Mozilla's CI and release processes, including application signing. It's an versatile and scalable tool useful for constructing complex CI systems. For example, when code is added to Firefox, Taskcluster manages the testing tasks ensuring that the new code integrates into the existing codebase without disruptions.
+- [**Taskcluster:**](https://taskcluster.net/) This robust framework underpins Mozilla's CI and release processes, including application signing. It's a versatile and scalable tool useful for constructing complex CI systems. For example, when code is added to Firefox, Taskcluster executes testing tasks that check if the codebase plus the new code work as intended.
 
 - [**Taskgraph:**](https://taskcluster-taskgraph.readthedocs.io/en/latest/) This Python library generates a directed acyclic graph (DAG) of tasks for Taskcluster. Visualize a DAG as a one-way street map without loops, guiding tasks forward until they are all complete.
 
@@ -56,4 +56,4 @@ Delving into the real-world scenario of Firefox, the Firefox Release Engineering
 
 ### **In Conclusion: There's a Lot to Learn About Release Engineering**
 
-Release engineering is a complex but interesting world. It ensures the software we depend on is created with precision and care. Whether it’s a nightly build or a stable release, each step in the release process plays a critical role in delivering a safe and enjoyable product. So, the next time you update your Firefox browser, remember the intricate journey it has taken in the world of release engineering!
+Release engineering is a complex but interesting world. It ensures the software we depend on is created with attention and care. Whether it’s a nightly build or a stable release, each step in the release process plays a critical role in delivering a safe and enjoyable product. So, next time you update your Firefox browser, remember the intricate journey it took in the world of release engineering!
