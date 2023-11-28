@@ -20,7 +20,7 @@ A release engineering team is the people who make sure application releases run 
 
 Delving into the real-world scenario of Firefox, the Firefox Release Engineering team focuses on continuous delivery, ensuring that each Firefox product is signed and published on schedule. We handle work from automating complex tasks to making sure updates reach your browser. We also develop and maintain web apps, libraries, and automation used to sign, repackage, and publish Firefox, web extensions, and Mozilla VPN on Desktop and Android platforms.
 
-#### **Enhancing Security and Engineering Effectiveness**
+#### **On Signing 🔏 and CI ✅**
 
 - **Application Signing:** This process is akin to placing a digital seal of authenticity on software, ensuring its origin and integrity. Imagine signing a digital document to certify its credibility; similarly, application signing authenticates software for end users.
   
