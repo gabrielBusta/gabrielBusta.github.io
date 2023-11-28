@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "gabrielbusta-github-io"
+version = "0.1.0"
+description = ""
+authors = ["Gabriel Bustamante <gabriel@odinzen.io>"]
+readme = "README.md"
+packages = [{include = "gabrielbusta"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pelican = {extras = ["markdown"], version = "^4.9.1"}
+invoke = "^2.2.0"
+livereload = "^2.6.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

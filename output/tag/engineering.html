@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>gabrielbusta.github.io - engineering</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">gabrielbusta.github.io</a></h1>
+                <nav><ul>
+                    <li><a href="/category/firefox.html">Firefox</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/welcome-to-the-world-of-release-engineering.html">Welcome to the World of Release Engineering!</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2023-11-27T18:30:00-06:00">
+                Published: Mon 27 November 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/gabriel-bustamante.html">Gabriel Bustamante</a>
+        </address>
+<p>In <a href="/category/firefox.html">Firefox</a>.</p>
+<p>tags: <a href="/tag/firefox.html">firefox</a> <a href="/tag/release.html">release</a> <a href="/tag/engineering.html">engineering</a> </p>
+</footer><!-- /.post-info --><!-- Modified: 2023-11-27 18:30 -->
+
+<!-- ### **Welcome to the World of Release Engineering!** -->
+
+<p>Have you ever wondered how the apps and software you use daily transition from a developer's computer to your device, ready for use? This is the realm of Release Engineering, often dubbed Releng. It's a fascinating sub-discipline in software engineering that's all about transforming source code into the finished products we all love and use. Think of it like the bridge between creating software in small teams and producing it on a large, industrial scale.</p>
+<h3><strong>The Role of the Release Engineering Team</strong></h3>
+<p>A release engineering team is the people who make sure application releases run smoothly. They integrate the efforts of different product developent teams to produce a stable and safe product. Their job is to ensure that the software's production is repeatable, delivers predictable results, and scales.</p>
+<h3><strong>Inside Firefox's Release Engineering</strong></h3>
+<p>Delving into the real-world scenario of Firefox, the Firefox Release Engineering team focuses on continuous delivery, ensuring that each Firefox product is signed and published on schedule. We handle work from automating complex tasks to making sure updates reach your browser. We also develop and maintain web apps, libraries, and automation used to sign, repackage, and publish Firefox, web extensions, and Mozilla VPN on Desktop and Android platforms.</p>
+<h4><strong>Enhancing Security and Engineering Effectiveness</strong></h4>
+<ul>
+<li>
+<p><strong>Application Signing:</strong> This process is akin to placing a digital seal of authenticity on software, ensuring its origin and integrity. Imagine signing a digital document to certify its credibility; similarly, application signing authenticates software for end users.</p>
+</li>
+<li>
+<p><strong>Continuous Integration (CI):</strong> Think of CI as the software's regular health check-up. It's a process where changes made by developers are frequently integrated and tested. This routine ensures that the software remains healthy, catching potential issues early and maintaining consistent quality.</p>
+</li>
+</ul>
+<h3><strong>The Phases of a Firefox Release</strong></h3>
+<p><a href="https://whattrainisitnow.com/">Firefox's approach to releases</a> is highly iterative and user-feedback driven, reflecting the dynamic nature of web browsers.</p>
+<ol>
+<li>
+<p><a href="https://whattrainisitnow.com/release/?version=nightly"><strong>Nightly:</strong></a> This initial phase, much like a rough draft, is crucial for spotting issues early, and is not yet fully tested.</p>
+</li>
+<li>
+<p><a href="https://whattrainisitnow.com/release/?version=beta"><strong>Beta:</strong></a> This phase is the software equivalent of a movie's rough cut, more refined than Nightly but still ironing out bugs.</p>
+</li>
+<li>
+<p><strong>Release Candidate (RC):</strong> Similar to a movie's final cut, in this phase Firefox is almost ready for release (but possibly needs minor tweaks or bug fixes.)</p>
+</li>
+<li>
+<p><a href="https://whattrainisitnow.com/release/?version=release"><strong>Stable Release:</strong></a> The grand premiere! The version Firefox's audience receives is polished and ready for widespread use.</p>
+</li>
+<li>
+<p><a href="https://whattrainisitnow.com/release/?version=esr"><strong>Extended Support Release (ESR):</strong></a> Designed for larger organizations, focusing on stability and security, sometimes at the expense of newer features.</p>
+</li>
+</ol>
+<h3><strong>Taskcluster and Taskgraph: The Backbone of Firefox's Release Automation</strong></h3>
+<ul>
+<li>
+<p><a href="https://taskcluster.net/"><strong>Taskcluster:</strong></a> This robust framework underpins Mozilla's CI and release processes, including application signing. It's an versatile and scalable tool useful for constructing complex CI systems. For example, when code is added to Firefox, Taskcluster manages the testing tasks ensuring that the new code integrates into the existing codebase without disruptions.</p>
+</li>
+<li>
+<p><a href="https://taskcluster-taskgraph.readthedocs.io/en/latest/"><strong>Taskgraph:</strong></a> This Python library generates a directed acyclic graph (DAG) of tasks for Taskcluster. Visualize a DAG as a one-way street map without loops, guiding tasks forward until they are all complete.</p>
+</li>
+</ul>
+<h3><strong>Ship-It: The Launchpad for Firefox Releases</strong></h3>
+<p><a href="https://github.com/mozilla-releng/shipit">Ship-It</a> serves as a control panel for Mozilla's release managers, making it easy to configure and execute the automated tasks necessary to deliver Firefox versions (beta, release, ESR, etc.) to their audience. This tool leverages the DAG generated by Taskgraph and executed by Taskcluster.</p>
+<h3><strong>Balrog: Mozilla's Update Server</strong></h3>
+<p><a href="https://github.com/mozilla-releng/balrog">Balrog</a>, Mozilla’s update server, functions like a reliable delivery service. It brings the latest and safest versions of Firefox, Mozilla VPN, and Thunderbird to people's devices.</p>
+<h3><strong>In Conclusion: There's a Lot to Learn About Release Engineering</strong></h3>
+<p>Release engineering is a complex but interesting world. It ensures the software we depend on is created with precision and care. Whether it’s a nightly build or a stable release, each step in the release process plays a critical role in delivering a safe and enjoyable product. So, the next time you update your Firefox browser, remember the intricate journey it has taken in the world of release engineering!</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+        </section><!-- /#extras -->
+
+
+
+</body>
+</html>
