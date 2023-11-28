@@ -6,10 +6,6 @@ Slug: welcome-to-the-world-of-release-engineering
 Author: Gabriel Bustamante
 Summary: A straight forward over view of Firefox's release engineering's team.
 
-<!-- Modified: 2023-11-27 18:30 -->
-
-<!-- ### **Welcome to the World of Release Engineering!** -->
-
 Have you ever wondered how the apps and software you use daily transition from a developer's computer to your device, ready for use? This is the realm of Release Engineering, often dubbed Releng. It's a fascinating sub-discipline in software engineering that's all about transforming source code into the finished products we all love and use. Think of it like the bridge between creating software in small teams and producing it on a large, industrial scale.
 
 ### **The Role of the Release Engineering Team**
@@ -20,11 +16,13 @@ A release engineering team is the people who make sure application releases run 
 
 Delving into the real-world scenario of Firefox, the Firefox Release Engineering team focuses on continuous delivery, ensuring that each Firefox product is signed and published on schedule. We handle work from automating complex tasks to making sure updates reach your browser. We also develop and maintain web apps, libraries, and automation used to sign, repackage, and publish Firefox, web extensions, and Mozilla VPN on Desktop and Android platforms.
 
-#### **On Signing 🔏 and CI ✅**
+#### **On Signing 🔏 CI ✅ and CD 🚀**
 
 - **Application Signing:** This process is akin to placing a digital seal of authenticity on software, ensuring its origin and integrity. Imagine signing a digital document to certify its credibility; similarly, application signing allows software authors to "sign" the software they publish and guarantee the application has not been altered since it was signed.
   
 - **Continuous Integration (CI):** Think of CI as the software's regular health check-up. It's a process where changes made by developers are frequently integrated into the codebase and tested. This routine helps the software remains healthy, catching potential issues early.
+
+- **Continuous Deployment (CD):** Continuous Deployment is the automated release of a software product. Imagine a conveyor belt in a factory continuously moving products to the shipping area; similarly, CD ensures that every change goes through all release phases with little human intervention. This means that new features, bug fixes, and updates are rapidly and reliably delivered, increasing the effectiveness of the engineering process.
 
 ### **The Phases of a Firefox Release**
 
