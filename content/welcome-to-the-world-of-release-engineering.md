@@ -8,6 +8,10 @@ Summary: A straight forward over view of Firefox's release engineering's team.
 
 Have you ever wondered how the apps and software you use daily transition from a developer's computer to your device, ready for use? This is the realm of Release Engineering, often dubbed Releng. It's a fascinating sub-discipline in software engineering that's all about transforming source code into the finished products we all love and use. Think of it like the bridge between creating software in small teams and producing it on a large, industrial scale.
 
+### **Who is this Post for?**
+
+I wrote this post with a specific audience in mind: students, contributors, and interns joining us through programs like [Outreachy](https://www.outreachy.org/).
+
 ### **The Role of the Release Engineering Team**
 
 A release engineering team is the people who make sure application releases run smoothly. They integrate the efforts of different product development teams to produce a stable and safe product. Their job is to ensure that the software's production is repeatable, delivers predictable results, and scales.
@@ -16,7 +20,7 @@ A release engineering team is the people who make sure application releases run 
 
 Delving into the real-world scenario of Firefox, the Firefox Release Engineering team focuses on continuous delivery, ensuring that each Firefox product is signed and published on schedule. We handle work from automating complex tasks to making sure updates reach your browser. We also develop and maintain web apps, libraries, and automation used to sign, repackage, and publish Firefox, web extensions, and Mozilla VPN on Desktop and Android platforms.
 
-#### **On Signing 🔏 CI ✅ and CD 🚀**
+#### **Signing 🔏 CI ✅ and CD 🚀**
 
 - **Application Signing:** This process is akin to placing a digital seal of authenticity on software, ensuring its origin and integrity. Imagine signing a digital document to certify its credibility; similarly, application signing allows software authors to "sign" the software they publish and guarantee the application has not been altered since it was signed.
   
