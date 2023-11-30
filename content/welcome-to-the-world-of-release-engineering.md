@@ -1,7 +1,7 @@
 Title: Welcome to the World of Release Engineering!
 Date: 2023-11-27 18:30
 Category: Firefox
-Tags: firefox,release,engineering
+Tags: firefox,release,engineering,open source
 Slug: welcome-to-the-world-of-release-engineering
 Author: Gabriel Bustamante
 Summary: A straight forward over view of Firefox's release engineering's team.
@@ -10,7 +10,7 @@ Have you ever wondered how the apps and software you use daily transition from a
 
 ### **Who is this Post for?**
 
-I wrote this post with a specific audience in mind: students, contributors, and interns joining us through programs like [Outreachy](https://www.outreachy.org/).
+I wrote this post with a specific audience in mind: students, open source enthusiasts, and interns, especially those participating in programs like [Outreachy](https://www.outreachy.org/) or those looking to gain experience in open source contributions.
 
 ### **The Role of the Release Engineering Team**
 
@@ -28,9 +28,9 @@ Delving into the real-world scenario of Firefox, the Firefox Release Engineering
 
 - **Continuous Deployment (CD):** Continuous Deployment is the automated release of a software product. Imagine a conveyor belt in a factory continuously moving products to the shipping area; similarly, CD ensures that every change goes through all release phases with little human intervention. This means that new features, bug fixes, and updates are rapidly and reliably delivered, increasing the effectiveness of the engineering process.
 
-### **The Phases of a Firefox Release**
+### **The Firefox Release Train**
 
-[Firefox's approach to releases](https://whattrainisitnow.com/) is highly iterative and user-feedback driven, reflecting the changing nature of web browsers.
+[Firefox's approach to releases](https://whattrainisitnow.com/) is highly iterative and user-feedback driven, reflecting the changing nature of web browsers. The Phases of a Firefox Release are:
 
 1. [**Nightly:**](https://whattrainisitnow.com/release/?version=nightly) This initial phase, much like a rough draft, is crucial for spotting issues early, and is not yet fully tested.
 
@@ -44,7 +44,7 @@ Delving into the real-world scenario of Firefox, the Firefox Release Engineering
 
 ### **Taskcluster and Taskgraph: The Backbone of Firefox's Release Automation**
 
-- [**Taskcluster:**](https://taskcluster.net/) This robust framework underpins Mozilla's CI and release processes, including application signing. It's a versatile and scalable tool useful for constructing complex CI systems. For example, when code is added to Firefox, Taskcluster executes testing tasks that check if the codebase plus the new code work as intended.
+- [**Taskcluster:**](https://taskcluster.net/) This robust framework underpins Mozilla's CI and release processes. It's a versatile and scalable tool useful for constructing complex CI systems. For example, when code is added to Firefox, Taskcluster executes testing tasks that check if the codebase plus the new code work as intended.
 
 - [**Taskgraph:**](https://taskcluster-taskgraph.readthedocs.io/en/latest/) This Python library generates a directed acyclic graph (DAG) of tasks for Taskcluster. Visualize a DAG as a one-way street map without loops, guiding tasks forward until they are all complete.
 
@@ -56,6 +56,6 @@ Delving into the real-world scenario of Firefox, the Firefox Release Engineering
 
 [Balrog](https://github.com/mozilla-releng/balrog), Mozilla’s update server, functions like a reliable delivery service. It brings the latest and safest versions of Firefox, Mozilla VPN, and Thunderbird to people's devices.
 
-### **In Conclusion: There's a Lot to Learn About Release Engineering**
+### **There's a Lot to Learn About Release Engineering**
 
 Release engineering is a complex but interesting world. It ensures the software we depend on is created with attention and care. Whether it’s a nightly build or a stable release, each step in the release process plays a critical role in delivering a safe and enjoyable product. So, next time you update your Firefox browser, remember the intricate journey it took in the world of release engineering!
